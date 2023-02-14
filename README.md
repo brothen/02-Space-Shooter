@@ -1,13 +1,20 @@
 # 02 Space Shooter
 
-Context and date
+Project 02 for BL-MSCH-C220 at Indiana University 2/13/2023
 
-Description
+A simple 2D face shooter
 
 ## Implementation
 
+Keyboard control, top-down face ship that can shoot face asteroids and a face enemy
+
 ## References
+
+https://opengameart.org/content/explosion-sheet
 
 ## Future Development
 
+None
+
 ## Created by
+Booker Rothenberg
