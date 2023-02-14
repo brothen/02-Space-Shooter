@@ -6,7 +6,7 @@ A simple 2D face shooter
 
 ## Implementation
 
-Keyboard control, top-down face ship that can shoot face asteroids and a face enemy
+Keyboard control, top-down face ship that can shoot faceteroids and a face enemy
 
 ## References
 
