@@ -1,12 +1,12 @@
 extends KinematicBody2D
 
-var velocity=Vector2(0,-100)
+var velocity=Vector2.ZERO
+var initial_speed=40
 var health=1
 var score=10
 
 func _ready():
-	velocity.rotated(randf()*2*PI)
-	velocity*=(randf()/2+1/2)
+	velocity = Vector2(0,initial_speed*randf()).rotated(PI*2*randf())
 
 func _physics_process(delta):
 	position+=velocity*delta

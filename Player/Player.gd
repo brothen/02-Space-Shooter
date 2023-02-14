@@ -11,6 +11,7 @@ var health=10
 
 onready var Bullet=load("res://Player/Bullet.tscn")
 onready var Explosion=load("res://Effects/Explosion.tscn")
+onready var Shooting_Face=load("res://Effects/Shooting_Face.tscn")
 var Effects=null
 
 func _ready():
@@ -42,6 +43,12 @@ func shoot():
 		Effects.add_child(bullet)
 		bullet.rotation=rotation
 		bullet.global_position=global_position+nose.rotated(rotation)
+		var shooting_face=Shooting_Face.instance()
+		Effects.add_child(shooting_face)
+		shooting_face.rotation=rotation
+		shooting_face.global_position=global_position
+		shooting_face.velocity=velocity
+		
 	
 
 func damage(d):

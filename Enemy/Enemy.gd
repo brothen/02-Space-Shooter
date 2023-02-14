@@ -1,5 +1,6 @@
 extends KinematicBody2D
 
+onready var Enemy_Shooting=load("res://Effects/Enemy_Shooting.tscn")
 onready var Enemy_Bullet=load("res://Enemy/Enemy_Bullet.tscn")
 var nose=Vector2(0,-60)
 var health=5
@@ -24,3 +25,7 @@ func _on_Timer_timeout():
 		enemy_bullet.global_position=global_position+nose.rotated(dir)
 		enemy_bullet.rotation=dir
 		Effects.add_child(enemy_bullet)
+		var shooting_face=Enemy_Shooting.instance()
+		Effects.add_child(shooting_face)
+		shooting_face.rotation=rotation
+		shooting_face.global_position=global_position
